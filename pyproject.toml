@@ -1,0 +1,32 @@
+[project]
+name = "module-3-nlp-experimental"
+version = "0.1.0"
+description = "Mindly — Memory-Powered AI Coach (Homework 3, NLP)"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "chromadb>=1.0.0",
+    "langchain-community>=0.4.1",
+    "langchain-openai>=1.2.1",
+    "langgraph>=1.1.10",
+    "loguru>=0.7.3",
+    "mem0ai>=2.0.1",
+    "openai>=1.30.0",
+    "python-dotenv>=1.2.2",
+    "sentence-transformers>=2.7.0",
+    "streamlit>=1.35.0",
+    "wandb>=0.17.0",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.uv]
+dev-dependencies = [
+    "pytest>=8.0.0",
+    "ruff>=0.4.0",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src"]

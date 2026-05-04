@@ -1,0 +1,24 @@
+.env
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+
+# ChromaDB — большие бинарники, не нужны в репо
+data/vector_db/
+
+# Логи генерируются локально
+data/log_file.log
+
+# Но саму директорию отслеживаем через .gitkeep
+!data/.gitkeep
+
+# Python build artifacts
+dist/
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+
+# OS
+.DS_Store
+Thumbs.db
