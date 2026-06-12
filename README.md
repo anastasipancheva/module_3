@@ -170,9 +170,6 @@ uv run python scripts/eval_benchmark.py
 
 ### Итоговая оценка: ~100/100 ??
 
----
-
-https://github.com/user-attachments/assets/12fb65c9-aef5-42fb-865a-dbeb33b8252c
 
 ## Структура проекта
 ```
